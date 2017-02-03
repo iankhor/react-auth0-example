@@ -4,6 +4,9 @@ This boilerplate was bootstrapped with:
 
 An example of the boilerplate can be seen here at [https://react-vanilla-router.herokuapp.com/](https://react-vanilla-router.herokuapp.com/)
 
+There is one example that is bootstrapped with [Material UI](http://material-ui.com) and it can be found
+at [https://github.com/iankhor/react-material-ui-boilerplate](https://github.com/iankhor/react-material-ui-boilerplate")
+
 ### Instructions
 1. Git clone repository into your local directory
 2. Run ```npm i``` in your local directory
