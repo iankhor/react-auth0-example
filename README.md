@@ -13,7 +13,7 @@ An example of the boilerplate can be seen here at [https://react-vanilla-router.
 
 ### Notes
 1. Update any environment variables where applicable in your local ```.env``` file
-2. Update CSS only in the style.styl file
+2. Update CSS in the style.styl file
 3. Any changes in the code and ```.styl``` files will automatically recompile the project
 4. Update routes in the component called ```Routes``` in ```\src\components\shared\Routes.js```
 5. The component ```JSONDebugger``` can be used to display JSON data by passing the component a JSON file with the prop name ```json```.
