@@ -10,9 +10,6 @@ const exampleJSONData = {
     data3: 123
 }
 
-//material-ui components
-import { TextField } from 'material-ui/';
-
 class PageOne extends Component {
     render(){
         return(
@@ -20,13 +17,8 @@ class PageOne extends Component {
                 <br/>
                 <div className="border color-purple">
                     <p><Link to='/'>Go to root page</Link></p>
-                    <p>
-                        <TextField
-                            hintText="Type something here"
-                            floatingLabelText="This is a text field child from PageOne component"
-                            fullWidth={true}
-                        />
-                    </p>
+                    <p> This is page one </p>
+                    <p> Observe the page address on your browser </p>
                     <p>Below is an example of the JSON debugger</p>
                     <JSONDebugger json={exampleJSONData} />
                 

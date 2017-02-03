@@ -1,7 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) 
-and [Material UI](http://material-ui.com) as the front end framework
+This boilerplate was bootstrapped with:   
+* [create-react-app](https://github.com/facebookincubator/create-react-app)   
+* [react-router v4.0.0-alpha.6](https://github.com/ReactTraining/react-router/releases)
 
-An example of the boilerplate can be seen [here at https://react-material-ui.herokuapp.com/](https://react-material-ui.herokuapp.com/)
+An example of the boilerplate can be seen here at [https://react-vanilla-router.herokuapp.com/](https://react-vanilla-router.herokuapp.com/)
 
 ### Instructions
 1. Git clone repository into your local directory
@@ -12,9 +13,8 @@ An example of the boilerplate can be seen [here at https://react-material-ui.her
 
 ### Notes
 1. Update any environment variables where applicable in your local ```.env``` file
-2. Update CSS only in the style.styl
+2. Update CSS only in the style.styl file
 3. Any changes in the code and ```.styl``` files will automatically recompile the project
 4. Update routes in the component called ```Routes``` in ```\src\components\shared\Routes.js```
 5. The component ```JSONDebugger``` can be used to display JSON data by passing the component a JSON file with the prop name ```json```.
 See example in ```\src\components\PageOne.js```  
-6. Assuming heroku is all set up on your terminal, use the command ```npm run deploy:heroku``` to deploy your app to [Heroku](http://www.heroku.com) 
