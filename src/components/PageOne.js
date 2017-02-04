@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import App from './App'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import JSONDebugger from '../utils/JSONDebugger'
 
 // example JSON data

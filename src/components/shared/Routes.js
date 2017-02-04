@@ -2,19 +2,19 @@ import React from 'react'
 
 //Routes
 import NotFound from './NotFound'
-import App from '../App';
-import PageOne from '../PageOne'
+import App from './../App';
+import PageOne from './../PageOne'
 
-import { BrowserRouter , Match, Miss } from 'react-router'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 const Routes = (props) => {
   return (
     <BrowserRouter>
-      <div>
-        <Match exactly pattern="/" component={App} />  
-        <Match exactly pattern="/PageOne" component={PageOne} />  
-        <Miss component={NotFound} />  
-      </div>
+      <Switch>
+        <Route path="/" exact component={App} />  
+        <Route path="/PageOne" component={PageOne} />  
+        <Route component={NotFound} />  
+      </Switch>
     </BrowserRouter>
   )
 }

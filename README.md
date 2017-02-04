@@ -1,6 +1,6 @@
 This boilerplate was bootstrapped with:   
 * [create-react-app](https://github.com/facebookincubator/create-react-app)   
-* [react-router v4.0.0-alpha.6](https://github.com/ReactTraining/react-router/releases)
+* [react-router v4.0.0-beta.3](https://github.com/ReactTraining/react-router/releases)
 
 An example of the boilerplate can be seen here at [https://react-vanilla-router.herokuapp.com/](https://react-vanilla-router.herokuapp.com/)
 
