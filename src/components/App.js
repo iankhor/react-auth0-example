@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from '../../assets/img/logo.svg'
 import '../css/style.css'
 import { Link } from 'react-router-dom'
+import SignUp from './SignUp'
+import Login from './Login'
 
 class App extends Component {
   render() {
@@ -14,7 +16,10 @@ class App extends Component {
 
           <div className="border color-blue">
               <Link to='/PageOne'>Go to Page One</Link>
+              <SignUp />
+              <Login />
           </div>
+
 
            {/* Render children here*/}
            {this.props.children} 
