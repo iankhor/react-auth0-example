@@ -14,7 +14,6 @@ class SignUp extends Component {
     _handleSubmit = (e, data) => {
         e.preventDefault()
         auth.signup(this.state.email, this.state.password)
-        
     }
 
     _handleEmailChange = (e) => {

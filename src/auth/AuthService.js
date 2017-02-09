@@ -20,7 +20,7 @@ export default class AuthService extends EventEmitter {
 
   login(username, password) {
     this.auth0.client.login({
-      realm: 'react-auth0-example',
+      realm: 'react-auth0',
       username,
       password
     }, (err, authResult) => {
@@ -36,7 +36,7 @@ export default class AuthService extends EventEmitter {
 
   signup(email, password){
     this.auth0.redirect.signupAndLogin({
-      connection: 'react-auth0-example',
+      connection: 'react-auth0',
       email,
       password,
     }, function(err) {
