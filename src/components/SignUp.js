@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import auth from './../auth/initAuth'
 
 class SignUp extends Component {
     constructor(props){
@@ -13,7 +12,7 @@ class SignUp extends Component {
     
     _handleSubmit = (e, data) => {
         e.preventDefault()
-        auth.signup(this.state.email, this.state.password)
+        this.props.auth.signup(this.state.email, this.state.password)
     }
 
     _handleEmailChange = (e) => {
