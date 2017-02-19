@@ -10,12 +10,14 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { isLogin: true }
+    this.state = { isLoginToggle: true }
   }
 
   _loginSignUpToggle = () => {
-    this.setState( { isLogin: !this.state.isLogin } )
+    this.setState( { isLoginToggle: !this.state.isLoginToggle } )
   }
+
+
 
   render() {
     return (
@@ -31,11 +33,10 @@ class App extends Component {
           </div>
 
           <button onClick={ this._loginSignUpToggle }>
-            Click to { this.state.isLogin ? "Sign Up" : "Login" }               
+            Click to { this.state.isLoginToggle ? "Sign Up" : "Login" }               
           </button>
 
-          { this.state.isLogin ? <Login auth={ auth }/> : <SignUp auth={ auth }/>} 
-
+          { this.state.isLoginToggle ? <Login /> : <SignUp /> }
 
            {/* Render children here*/}
            {this.props.children} 
