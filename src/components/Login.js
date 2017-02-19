@@ -13,7 +13,6 @@ class Login extends Component {
 
     
     _handleSubmit = (e, data) => {
-        // e.preventDefault()
         auth.login(this.state.email, this.state.password)
     }
 
@@ -23,6 +22,11 @@ class Login extends Component {
 
     _handlePasswordChange = (e) => {
         this.setState( {password: e.target.value} )
+    }
+
+    _logout = () => {
+        auth.logout()
+        this.props._refresh()
     }
 
     _renderLoginForm = () => {
@@ -38,12 +42,10 @@ class Login extends Component {
     _renderLogout = () => {
         return(
             <div>
-                <button onClick={ auth.logout }>You are logged in ! Click to logout !</button>
+                <button onClick={ this._logout }>You are logged in ! Click to logout !</button>
             </div>
         )
-        
     }
-
 
     render(){
         return(
