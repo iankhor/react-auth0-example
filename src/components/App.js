@@ -4,12 +4,16 @@ import '../css/style.css'
 import { Link } from 'react-router-dom'
 import SignUp from './SignUp'
 import Login from './Login'
+import auth from './../auth/initAuth'
 
 class App extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { isLoginToggle: true }
+    this.state = { 
+      isLoginToggle: true,
+      isLoggedIn: auth.loggedIn()
+     }
   }
 
   _loginSignUpToggle = () => {
@@ -18,6 +22,10 @@ class App extends Component {
 
   _refresh = () => {
     this.forceUpdate()
+  }
+
+  _updateStatus = () => {
+    this.setState( { isLoggedIn: auth.loggedIn() } )
   }
 
   render() {
@@ -37,7 +45,7 @@ class App extends Component {
             Click to { this.state.isLoginToggle ? "Sign Up" : "Login" }               
           </button>
 
-          { this.state.isLoginToggle ? <Login _refresh={ this._refresh } /> : <SignUp /> }
+          { this.state.isLoginToggle ? <Login _refresh={ this._refresh } _updateStatus={this._updateStatus } /> : <SignUp /> }
 
            {/* Render children here*/}
            {this.props.children} 
