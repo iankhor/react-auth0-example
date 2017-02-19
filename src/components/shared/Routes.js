@@ -13,10 +13,7 @@ const PrivateRoute = ({ component, ...rest }) => (
     auth.loggedIn() ? (
       React.createElement(component, props)
     ) : (
-      <Redirect to={{
-        pathname: '/',
-        state: { from: props.location }
-      }}/>
+      <Redirect to="/NotFound" />
     )
   )}/>
 )
@@ -27,6 +24,7 @@ const Routes = (props) => {
       <Switch>
         <Route path="/" exact component={App} />  
         <PrivateRoute path="/PageOne" component={PageOne} />  
+        <Route path="/NotFound" component={NotFound} />  
         <Route component={NotFound} />  
       </Switch>
     </BrowserRouter>
