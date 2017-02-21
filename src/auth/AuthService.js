@@ -30,6 +30,7 @@ export default class AuthService extends EventEmitter {
       }
       if (authResult && authResult.idToken && authResult.accessToken) {
         this.setToken(authResult.accessToken, authResult.idToken)
+        window.location = window.location.origin //redirect to main page
       }
     })
   }

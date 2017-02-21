@@ -13,8 +13,9 @@ class Login extends Component {
 
     
     _handleSubmit = (e, data) => {
+        e.preventDefault()
         auth.login(this.state.email, this.state.password)
-        setTimeout(()=> { window.location.reload() } , 1500);
+        // setTimeout(()=> { window.location.reload() } , 1500);
     }
 
     _handleEmailChange = (e) => {
